@@ -1,0 +1,13 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:p="urn:schemas-microsoft-com:office:powerpoint" xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation gridspacingx="45722" gridspacingy="45722" sizeof="custom" slidesizex="4320" slidesizey="6240">
+  <p:master id="3" type="main" href="master03.htm" xmlhref="master03.xml" template="Office Theme">
+   <p:schemes>
+    <p:colorscheme colors="#ffffff,#000000,#e7e6e6,#44546a,#5b9bd5,#ed7d31,#0563c1,#954f72"/>
+   </p:schemes>
+  </p:master>
+  <p:slide id="1" href="slide0001.htm" masterhref="master03.htm"/>
+  <p:viewstate type="slideView" slidehref="slide0001.htm"/>
+  <p:headersfooters formatid="0" nofooter="t" noheader="t" nodate="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t" browsersupport="v4"/>
+ </p:presentation>
+</xml>

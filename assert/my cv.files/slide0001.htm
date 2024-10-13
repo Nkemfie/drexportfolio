@@ -1,0 +1,267 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:p="urn:schemas-microsoft-com:office:powerpoint" xmlns:oa="urn:schemas-microsoft-com:office:activation" xmlns="http://www.w3.org/TR/REC-html40">
+ <head>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+  <meta name=ProgId content=PowerPoint.Slide>
+  <meta name=Generator content="WPS Office WPP">
+  <link id=Main-File rel=Main-File href="../my cv.html">
+  <link rel=Preview href=preview.wmf>
+  <meta rel=Robots content=NoIndex>
+  <!--[if !mso]>
+   <style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+  <![endif]-->
+  <meta name=Description content="2024/7/9">
+  <link rel=Stylesheet href="master03_stylesheet.css">
+  <![if !ppt]>
+   <style media=print>
+<!-- .sld
+	{left:0px !important;														
+	width:6.0in !important;														
+	height:4.5in !important;														
+	font-size:107% !important;}
+ -->   </style>
+   <script>
+<!-- 
+function LoadSld()
+{
+	var sld=GetObj("SlideObj")
+	if( !g_supportsPPTHTML ) {		
+		sld.style.visibility="visible"
+		return
+	}
+
+	if( MakeNotesVis() ) return
+
+	runAnimations = _InitAnimations();
+	
+	if( IsWin("PPTSld") )
+		parent.SldUpdated(GetSldId())
+	g_origSz=parseInt(SlideObj.style.fontSize)
+	g_origH=sld.style.posHeight
+	g_origW=sld.style.posWidth
+	g_scaleHyperlinks=(document.all.tags("AREA").length>0)
+	if( g_scaleHyperlinks )
+		InitHLinkArray()
+	if( g_scaleInFrame||(IsWin("PPTSld") && parent.IsFullScrMode() ) )
+		document.body.scroll="no"
+	_RSW()
+	if( IsWin("PPTSld") && parent.IsFullScrMode() )
+		FullScrInit();
+	
+	MakeSldVis();
+
+	if( runAnimations )
+	{
+		if( document.all("NSPlay") )
+			document.all("NSPlay").autoStart = false;
+
+		if( sld.filters && sld.filters.revealtrans )
+			setTimeout( "document.body.start()", sld.filters.revealtrans.duration * 1000 );
+		else
+			document.body.start();
+	}
+}
+
+function MakeSldVis() 
+{
+	var fTrans=g_showAnimation && SldHasTrans()
+	if( fTrans )	
+	{
+		if( g_bgSound ) {
+			idx=g_bgSound.indexOf(",");
+			pptSound.src=g_bgSound.substr( 0, idx );
+			pptSound.loop= -(parseInt(g_bgSound.substr(idx+1)));
+		}
+		SlideObj.filters.revealtrans.Apply()	
+    }
+	SlideObj.style.visibility="visible"
+	if( fTrans )
+		SlideObj.filters.revealtrans.Play()
+}
+function MakeNotesVis() 
+{
+	if( !IsNts() ) return false 
+	SlideObj.style.display="none"
+	nObj = document.all.item("NotesObj")
+	parent.SetHasNts(0)
+	if( nObj ) { 
+		nObj.style.display=""
+		parent.SetHasNts(1)
+	}
+	return 1
+}
+function ChkAutoAdv()
+{
+	if(SldHasTrans())
+		SlideObj.onfilterchange=AutoAdv
+	else
+		AutoAdv()
+}
+function AutoAdv()
+{
+	if(!IsWin("PPTSld") || !gUseSldTimings )return
+	var sld=GetCurSld()
+	if( (sld.mAdvDelay>0) && !parent.IsFramesMode() )
+		setTimeout("parent.GoToNextSld()",sld.mAdvDelay)
+}
+function GetObj(id)
+{
+	if(g_supportsPPTHTML) return document.all(id);
+	else return document.getElementById(id);
+}
+function SldHasTrans() { return SlideObj.style.filter != ""; }
+function GetSldId() 
+{
+	var regExp = /file:\/\/\//i
+	var pos = location.href.search(regExp)
+	if (MHTMLPrefix != "" && pos != -1)
+		sId = location.href.substring(pos)
+	else
+	{
+		sId = RemoveFilePrefixFromHref(location.href);
+		var regExp = /\//
+		var fixedHref = sId
+		var pos = -1
+
+		pos = fixedHref.search(regExp)
+		while (pos != -1)
+		{
+			fixedHref = fixedHref.replace(regExp, "\\")
+			pos = fixedHref.search(regExp)
+		}
+
+		if (g_fBaseHyperlink == true)
+			sId = "file:///" + fixedHref;
+		else
+			sId = fixedHref.substring(fixedHref.lastIndexOf('\\') + 1)
+	}
+
+	return sId
+}
+function HideMenu() { if( frames["PPTSld"] && PPTSld.document.all.item("ctxtmenu") && PPTSld.ctxtmenu.style.display!="none" ) { PPTSld.ctxtmenu.style.display='none'; return true } return false }
+function IsWin( name ) { return window.name == name }
+function IsNts() { return IsWin("PPTNts") }
+function IsSldOrNts() { return( IsWin("PPTSld")||IsWin("PPTNts") ) }
+function SupportsPPTAnimation() { return( navigator.platform == "Win32" && navigator.appVersion.indexOf("Windows")>0 ) }
+function SupportsPPTHTML()
+{
+	var appVer=navigator.appVersion, msie=appVer.indexOf("MSIE "), ver=0
+	if( msie >= 0 )
+		ver=parseFloat( appVer.substring( msie+5, appVer.indexOf(";",msie) ) )
+	else
+		ver=parseInt(appVer)
+
+	return( ver >= 4 && msie >= 0 )
+}
+function _RSW()
+{
+	if( !g_supportsPPTHTML || IsNts() ||
+	  ( !g_scaleInFrame && (!IsWin("PPTSld") || !parent.IsFullScrMode()) ) )
+		return
+
+        var padding=0;
+        if( IsWin("PPTSld") && parent.IsFramesMode() ) padding=6
+
+	cltWidth=document.body.clientWidth-padding
+	cltHeight=document.body.clientHeight-padding
+	factor=(1.0*cltWidth)/g_origW
+	if( cltHeight < g_origH*factor )
+		factor=(1.0*cltHeight)/g_origH
+
+	newSize = g_origSz * factor
+	if( newSize < 1 ) newSize=1
+
+	s=SlideObj.style
+	s.fontSize=newSize+"px"
+	s.posWidth=g_origW*factor
+	s.posHeight=g_origH*factor
+	s.posLeft=(cltWidth-s.posWidth+padding)/2
+	s.posTop=(cltHeight-s.posHeight+padding)/2
+
+	if( g_scaleHyperlinks )
+		ScaleHyperlinks( factor )
+}
+function _InitAnimations()
+{
+	animRuntimeInstalled = ''+document.body.localTime != 'undefined';
+	isFullScreen = (window.name == "PPTSld") && !parent.IsFramesMode();
+	g_animUseRuntime = g_showAnimation && animRuntimeInstalled && !(isFullScreen && parent.IsSldVisited());
+	if( g_animUseRuntime ) {
+		collSeq = document.all.tags("seq");
+		if( collSeq != null ) {
+			for(ii=0;ii<collSeq.length;ii++) {
+				if( collSeq[ii].getAttribute( "p:nodeType" ) == "mainSeq" ) {
+					g_animMainSequence = collSeq[ii];
+					break;
+				}
+			}
+		}
+	
+		if( g_animItemsToHide && document.body.playAnimations != false ) {
+			for(jj = 0; jj < g_animItemsToHide.length; jj++) {
+				if( hideObj = GetObj(g_animItemsToHide[jj]) )
+					hideObj.runtimeStyle.visibility="hidden";
+			}
+		}
+
+		if( g_animInteractiveItems ){
+			for(jj = 0; jj < g_animInteractiveItems.length; jj++) {
+				if( triggerObj = GetObj(g_animInteractiveItems[jj]) )
+					triggerObj.runtimeStyle.cursor="hand";
+			}
+		}
+		
+		if( gUseSldTimings && ''+g_animSlideTime != 'undefined' ) {
+			adjustedTime = document.body.calculateAutoAdvanceTimes( g_animSlideTime, g_animEffectTimings );
+			if( IsWin("PPTSld") && adjustedTime != g_animSlideTime ) {
+			   var sld = GetCurSld();
+			   sld.mAdvDelay = adjustedTime * 1000;
+			}
+		}
+	}
+
+	return g_animUseRuntime;
+}
+
+
+var g_supportsPPTHTML = SupportsPPTHTML(), g_scaleInFrame = 1, gId="", g_bgSound="",
+    g_scaleHyperlinks = false, g_allowAdvOnClick = 1, g_showInBrowser = 0, gLoopCont = 0, gUseSldTimings = 1;
+var g_showAnimation = g_supportsPPTHTML && SupportsPPTAnimation() && g_showInBrowser;
+var g_animManager = null;
+var g_animUseRuntime = false;
+var g_animItemsToHide, g_animInteractiveItems, g_animSlideTime;
+var g_animMainSequence = null;
+// -->   </script>
+   <!--[if vml]>
+    <script>g_vml = 1;
+</script>
+   <![endif]-->
+  <![endif]>
+  <o:shapelayout v:ext="edit">
+   <o:idmap v:ext="edit" data="3"/>
+<o:rules v:ext="edit"><o:r id="V:Rule1" type="connector" idref="#Straight Connector 5_x0000_s2"/></o:rules>  </o:shapelayout>
+ </head>
+ <body lang="ZH-CN" style="margin:0px;background-color:black" onresize="_RSW()" onload="LoadSld()">
+  <div id="SlideObj" class="sld" style="position:absolute;top:0px;left:0px;width:370px;height:534px;font-size:16px;background-color:white;clip:rect(0%, 101%, 101%, 0%);visibility:hidden">
+   <p:slide coordsize="540,780" masterhref="master03.xml"><v:shape id="TextBox 3_x0000_s1" o:spt="202" type="#_x0000_t202" style="position:absolute;left:186.2pt;top:44.05pt;height:55.65pt;width:353.8pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:line id="Straight Connector 5_x0000_s2" o:spt="20" style="position:absolute;left:186.207165354331pt;top:88.2392913385827pt;height:1.45pt;width:315.45pt;" filled="f" stroked="t"><v:fill on="f" focussize="0,0"/><v:stroke weight="0.5pt" color="#5B9BD5 [4]" miterlimit="8" joinstyle="miter"/><o:lock v:ext="edit" aspectratio="f"/></v:line><v:shape id="TextBox 8_x0000_s3" o:spt="75" type="#_x0000_t75" style="position:absolute;left:240.15pt;top:88.55pt;height:37.2pt;width:230.1pt;"><v:imagedata src="image001.png" o:title=""/><o:lock v:ext="edit"/></v:shape><v:shape id="TextBox 13_x0000_s4" o:spt="202" type="#_x0000_t202" style="position:absolute;left:38.8165354330709pt;top:180.486535433071pt;height:101.784409448819pt;width:209.360472440945pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 14_x0000_s5" o:spt="202" type="#_x0000_t202" style="position:absolute;left:240.2pt;top:168.4pt;height:192.55pt;width:292.55pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="Round Diagonal Corner Rectangle 15_x0000_s6" style="position:absolute;left:30.5217322834646pt;top:266.086850393701pt;height:489.130472440945pt;width:209.690866141732pt;v-text-anchor:middle;" fillcolor="#DEEBF7" filled="t" stroked="f" coordsize="2663074,6211957" path="m443854,0l2663074,0,2663074,0,2663074,5768102c2663074,6013236,2464354,6211956,2219220,6211956l0,6211957,0,6211957,0,443854c0,198720,198720,0,443854,0xe"><v:path o:connectlocs="2663074,3105978;1331537,6211957;0,3105978;1331537,0" o:connectangles="0,82,164,247"/><v:fill on="t" focussize="0,0"/><v:stroke on="f" weight="1pt" miterlimit="8" joinstyle="miter"/><o:lock v:ext="edit" aspectratio="f"/></v:shape><v:shape id="Picture 20_x0000_s7" o:spt="75" type="#_x0000_t75" style="position:absolute;left:18.8pt;top:13pt;height:245.45pt;width:177.9pt;"><v:imagedata src="image002.png" o:title=""/><o:lock v:ext="edit"/></v:shape><v:shape id="TextBox 22_x0000_s8" o:spt="202" type="#_x0000_t202" style="position:absolute;left:36.6911811023622pt;top:279.754488188976pt;height:205.992204724409pt;width:195.556929133858pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 23_x0000_s9" o:spt="202" type="#_x0000_t202" style="position:absolute;left:238.417559055118pt;top:336.986299212598pt;height:121.17188976378pt;width:294.376220472441pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 24_x0000_s10" o:spt="202" type="#_x0000_t202" style="position:absolute;left:242.668267716535pt;top:567.506062992126pt;height:121.1pt;width:293.131732283465pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 25_x0000_s11" o:spt="202" type="#_x0000_t202" style="position:absolute;left:245.170787401575pt;top:454.647559055118pt;height:101.784409448819pt;width:287.622992125984pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 26_x0000_s12" o:spt="202" type="#_x0000_t202" style="position:absolute;left:28.2572440944882pt;top:492.923937007874pt;height:101.784409448819pt;width:211.906535433071pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><v:shape id="TextBox 27_x0000_s13" o:spt="202" type="#_x0000_t202" style="position:absolute;left:30.5217322834646pt;top:602.571181102362pt;height:75.1265354330709pt;width:192.706535433071pt;mso-wrap-style:square;v-text-anchor:top;" filled="f" stroked="f"><v:fill on="f" focussize="0,0"/><v:stroke on="f"/><o:lock v:ext="edit" aspectratio="f"/><v:textbox style="mso-fit-shape-to-text:t;mso-fit-text-to-shape:t;"/></v:shape><![if !vml]>
+<img border=0 v:shapes="TextBox 3_x0000_s1" src="slide0001_image003.png" style="position:absolute;left:34.48%;top:5.65%;width:65.52%;height:7.13%"/><![endif]><div v:shape="TextBox 3_x0000_s1"><div class=O><span style="position:absolute;left:35.81%;top:5.60%;width:74.11%;height:6.15%"><span lang="en-US" style="font-size:222%;font-family:Bahnschrift Condensed;mso-ascii-font-family:Bahnschrift Condensed;mso-hansi-font-family:Bahnschrift Condensed">NKEMFIE COSMOS</span><span lang="en-US" style="font-size:222%;font-family:Bahnschrift Condensed;mso-ascii-font-family:Bahnschrift Condensed;mso-hansi-font-family:Bahnschrift Condensed;mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="Straight Connector 5_x0000_s2" src="image004.png" style="position:absolute;left:34.48%;top:11.31%;width:58.42%;height:0.19%"/><![endif]><![if !vml]>
+<img border=0 v:shapes="TextBox 8_x0000_s3" src="image001.png" style="position:absolute;left:44.47%;top:11.35%;width:42.61%;height:4.77%"/><![endif]><![if !vml]>
+<img border=0 v:shapes="TextBox 13_x0000_s4" src="slide0001_image005.png" style="position:absolute;left:7.19%;top:23.14%;width:38.77%;height:13.05%"/><![endif]><div v:shape="TextBox 13_x0000_s4"><div class=O><span style="position:absolute;left:8.52%;top:23.60%;width:13.60%;height:2.77%"><span lang="en-US">Contact:</span><span lang="en-US">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.52%;top:26.36%;width:25.37%;height:2.15%"><span lang="en-US" style="font-size:78%">Address: </span><span lang="en-US" style="font-size:78%">B</span><span lang="en-US" style="font-size:78%">afoussam</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.52%;top:28.52%;width:32.88%;height:2.15%"><span lang="en-US" style="font-size:78%">Phone</span><span lang="en-US" style="font-size:78%">: </span><span lang="en-US" style="font-size:78%">+237 677 63 98 31</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.52%;top:30.67%;width:40.77%;height:2.15%"><span lang="en-US" style="font-size:78%">Email</span><span lang="en-US" style="font-size:78%">: cosmosnkem@gmail.com</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.52%;top:32.83%;width:0.00%;height:2.77%"><span lang="en-US" style="mso-special-format:lastCR;display:none">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 14_x0000_s5" src="slide0001_image006.png" style="position:absolute;left:44.48%;top:21.59%;width:54.18%;height:24.69%"/><![endif]><div v:shape="TextBox 14_x0000_s5"><div class=O style="text-align:justify"><span style="position:absolute;left:45.67%;top:22.05%;width:12.88%;height:2.15%"><span lang="en-US" style="font-size:78%">Summary:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:24.20%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%">Highly motivated and skilled Software </span><span lang="en-US" style="font-size:61%">Engineer with a strong</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:25.89%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:61%">educational background in </span><span lang="en-US" style="font-size:61%">Computer-Based Instructions.</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:27.58%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span>Experienced in </span><span lang="en-US" style="font-size:61%">geolocalisation </span><span lang="en-US" style="font-size:61%">technologies and proficient </span><span lang="en-US" style="font-size:61%">in</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:29.28%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span>developing innovative </span><span lang="en-US" style="font-size:61%">software </span><span lang="en-US" style="font-size:61%">solutions. Currently pursuing</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:30.97%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:61%">a professional </span><span lang="en-US" style="font-size:61%">degree in </span><span lang="en-US" style="font-size:61%">Software Engineering at ISSAB</span><span lang="en-US" style="font-size:61%">.</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:32.66%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:61%">Demonstrated </span><span lang="en-US" style="font-size:61%">expertise </span><span lang="en-US" style="font-size:61%">in </span><span lang="en-US" style="font-size:61%">project development</span><span lang="en-US" style="font-size:61%">, with a </span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:34.35%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%">successful </span><span lang="en-US" style="font-size:61%">track record of creating a </span><span lang="en-US" style="font-size:61%">pharmacy </span><span lang="en-US" style="font-size:61%">geolocalisation</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:36.04%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:61%">system in Bafoussam and partially developing a school </span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:37.74%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%">management </span><span lang="en-US" style="font-size:61%">system during an internship at SIGERIS SAL</span><span lang="en-US" style="font-size:61%">.</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.74%;top:39.43%;width:62.20%;height:1.69%"><span lang="en-US" style="font-size:61%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:61%">Passionate about football, handball, cooking, fluent in English, </span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:45.67%;top:41.12%;width:61.81%;height:1.69%"><span lang="en-US" style="font-size:61%">and </span><span lang="en-US" style="font-size:61%">partially proficient in French.</span><span lang="en-US" style="font-size:61%">&#13;</span></span></div><div class=O style="text-align:justify"><span style="position:absolute;left:45.67%;top:42.83%;width:0.00%;height:2.77%"><span lang="en-US" style="mso-special-format:lastCR;display:none">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="Round Diagonal Corner Rectangle 15_x0000_s6" src="slide0001_image007.png" style="position:absolute;left:5.65%;top:34.11%;width:38.83%;height:62.71%"/><![endif]><div v:shape="Round Diagonal Corner Rectangle 15_x0000_s6"><div class=O style="text-align:center"><span lang="en-US" style="color:#FFFFFF;mso-special-format:lastCR;display:none">&#13;</span></div></div><![if !vml]>
+<img border=0 v:shapes="Picture 20_x0000_s7" src="image008.jpeg" style="position:absolute;left:4.88%;top:2.59%;width:30.15%;height:19.62%"/><![endif]><![if !vml]>
+<img border=0 v:shapes="TextBox 22_x0000_s8" src="slide0001_image009.png" style="position:absolute;left:6.79%;top:35.87%;width:36.21%;height:26.41%"/><![endif]><div v:shape="TextBox 22_x0000_s8"><div class=O><span style="position:absolute;left:8.13%;top:36.33%;width:28.27%;height:2.15%"><span lang="en-US" style="font-size:78%">Internship Experience:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:38.47%;width:19.36%;height:1.54%"><span lang="en-US" style="font-size:56%">Software </span><span lang="en-US" style="font-size:56%">Engineering</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:40.01%;width:33.07%;height:1.54%"><span lang="en-US" style="font-size:56%">SIGERIS </span><span lang="en-US" style="font-size:56%">SAL in Bafoussam </span><span lang="en-US" style="font-size:56%">Cameroon</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:41.55%;width:39.91%;height:1.54%"><span lang="en-US" style="font-size:56%">- Developed a pharmacy geolocation system </span></span><span style="position:absolute;left:8.13%;top:43.09%;width:29.33%;height:1.54%"><span lang="en-US" style="font-size:56%">in Bafoussam, utilizing advanced </span></span><span style="position:absolute;left:8.13%;top:44.63%;width:29.71%;height:1.54%"><span lang="en-US" style="font-size:56%">geolocalisationtion </span><span lang="en-US" style="font-size:56%">technologies.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:46.17%;width:36.37%;height:1.54%"><span lang="en-US" style="font-size:56%">- Partially created a school management </span></span><span style="position:absolute;left:8.13%;top:47.71%;width:34.74%;height:1.54%"><span lang="en-US" style="font-size:56%">system, contributing to the design and </span></span><span style="position:absolute;left:8.13%;top:49.24%;width:19.33%;height:1.54%"><span lang="en-US" style="font-size:56%">development phases.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:50.78%;width:39.34%;height:1.54%"><span lang="en-US" style="font-size:56%">- Collaborated with a team of developers to </span></span><span style="position:absolute;left:8.13%;top:52.32%;width:35.72%;height:1.54%"><span lang="en-US" style="font-size:56%">implement features and functionalities.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:53.86%;width:33.92%;height:1.54%"><span lang="en-US" style="font-size:56%">- Conducted testing and debugging to </span></span><span style="position:absolute;left:8.13%;top:55.40%;width:36.84%;height:1.54%"><span lang="en-US" style="font-size:56%">ensure the accuracy and reliability of the </span></span><span style="position:absolute;left:8.13%;top:56.94%;width:7.80%;height:1.54%"><span lang="en-US" style="font-size:56%">systems.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:8.13%;top:58.47%;width:29.08%;height:1.54%"><span lang="en-US" style="font-size:56%">- Assisted in documentation and </span></span><span style="position:absolute;left:8.13%;top:60.01%;width:17.44%;height:1.54%"><span lang="en-US" style="font-size:56%">maintenance tasks</span><span lang="en-US" style="font-size:56%">.</span><span lang="en-US" style="mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 23_x0000_s9" src="slide0001_image010.png" style="position:absolute;left:44.15%;top:43.20%;width:54.51%;height:15.53%"/><![endif]><div v:shape="TextBox 23_x0000_s9"><div class=O><span style="position:absolute;left:45.48%;top:43.66%;width:14.03%;height:2.15%"><span lang="en-US" style="font-size:78%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:78%">Education</span><span lang="en-US" style="font-size:78%">:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O style="mso-margin-left-alt:108;mso-text-indent-alt:0"><span style="position:absolute;left:47.98%;top:45.81%;width:53.33%;height:1.54%"><span style="font-size:56%;"><span style="mso-special-format:bullet;position:absolute;left:-4.69%">-</span></span><span lang="en-US" style="font-size:56%">Professional </span><span lang="en-US" style="font-size:56%">School: ISSAB </span><span lang="en-US" style="font-size:56%">(Sapientiae University Institute), </span></span><span style="position:absolute;left:47.98%;top:47.35%;width:9.87%;height:1.54%"><span lang="en-US" style="font-size:56%">Bafoussam </span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:45.48%;top:48.89%;width:47.46%;height:1.54%"><span lang="en-US" style="font-size:56%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:56%">- Pursuing a degree in Software Engineering (Year 1</span><span lang="en-US" style="font-size:56%">)</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:45.48%;top:50.43%;width:36.34%;height:1.54%"><span lang="en-US" style="font-size:56%"><span style="mso-spacerun:yes">&nbsp;</span>- </span><span lang="en-US" style="font-size:56%">CBI Intellexi Bilingual College, </span><span lang="en-US" style="font-size:56%">Dschang<span style="mso-spacerun:yes">&nbsp; </span></span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:45.48%;top:51.97%;width:50.36%;height:1.54%"><span lang="en-US" style="font-size:56%">- </span><span lang="en-US" style="font-size:56%">Advanced Level Certificate in </span><span lang="en-US" style="font-size:56%">Intellexi Bilingual </span><span lang="en-US" style="font-size:56%">College<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="position:absolute;left:45.48%;top:53.50%;width:11.93%;height:1.54%"><span lang="en-US" style="font-size:56%">Dschang(CBI</span><span lang="en-US" style="font-size:56%">)</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:45.48%;top:55.04%;width:54.70%;height:1.54%"><span lang="en-US" style="font-size:56%"><span style="mso-spacerun:yes">&nbsp; </span>- Ordinary Level Certificate in </span><span lang="en-US" style="font-size:56%">Intellexi Bilingual College(CBI</span><span lang="en-US" style="font-size:56%">)</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:45.48%;top:56.58%;width:52.24%;height:1.54%"><span lang="en-US" style="font-size:56%">-First School Living certificate at Catholic School Mbeil(CS)</span><span lang="en-US" style="font-size:56%;mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 24_x0000_s10" src="slide0001_image011.png" style="position:absolute;left:44.94%;top:72.76%;width:54.28%;height:15.53%"/><![endif]><div v:shape="TextBox 24_x0000_s10"><div class=O><span style="position:absolute;left:46.27%;top:73.22%;width:11.69%;height:2.15%"><span lang="en-US" style="font-size:78%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:78%">Projects</span><span lang="en-US" style="font-size:78%">:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:46.27%;top:75.37%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">- </span><span lang="en-US" style="font-size:56%">Pharmacy </span><span lang="en-US" style="font-size:56%">Geo-</span><span lang="en-US" style="font-size:56%">localition</span><span lang="en-US" style="font-size:56%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:56%">System: Developed a web-based </span></span><span style="position:absolute;left:46.27%;top:76.90%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">application to locate pharmacies in </span><span lang="en-US" style="font-size:56%">Bafousam</span><span lang="en-US" style="font-size:56%">, Cameroon. </span></span><span style="position:absolute;left:46.27%;top:78.44%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">Implemented </span><span lang="en-US" style="font-size:56%">geo-</span><span lang="en-US" style="font-size:56%">localition</span><span lang="en-US" style="font-size:56%"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:56%">algorithms to provide accurate results </span></span><span style="position:absolute;left:46.27%;top:79.98%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">and integrated user-friendly features for optimal user experience.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O style="text-align:justify;text-justify:distribute-all-lines"><span style="position:absolute;left:46.27%;top:81.52%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">- School Management System: Partially developed a school </span></span><span style="position:absolute;left:46.27%;top:83.06%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">management system, contributing to the design and </span></span><span style="position:absolute;left:46.27%;top:84.60%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">implementation of features such as student enrollment, attendance </span></span><span style="position:absolute;left:46.27%;top:86.14%;width:61.93%;height:1.54%"><span lang="en-US" style="font-size:56%">tracking, and grade management</span><span lang="en-US" style="font-size:56%">. </span><span lang="en-US" style="mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 25_x0000_s11" src="slide0001_image012.png" style="position:absolute;left:45.40%;top:58.29%;width:53.26%;height:13.05%"/><![endif]><div v:shape="TextBox 25_x0000_s11"><div class=O><span style="position:absolute;left:46.74%;top:58.75%;width:7.93%;height:2.77%"><span lang="en-US"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:78%">Skills</span><span lang="en-US" style="font-size:78%">:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:61.51%;width:44.27%;height:1.54%"><span lang="en-US" style="font-size:56%">- Programming Languages: HTML, </span><span lang="en-US" style="font-size:56%">Javascript</span><span lang="en-US" style="font-size:56%">, </span><span lang="en-US" style="font-size:56%">php</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:63.04%;width:48.89%;height:1.54%"><span lang="en-US" style="font-size:56%">- Web Development: HTML, CSS, JavaScript, Bootstrap</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:64.58%;width:21.61%;height:1.54%"><span lang="en-US" style="font-size:56%">- Database: SQL, MySQL</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:66.12%;width:50.09%;height:1.54%"><span lang="en-US" style="font-size:56%">- Software Development: web application development</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:67.66%;width:59.97%;height:1.54%"><span lang="en-US" style="font-size:56%">- Teamwork: Ability to work collaboratively in a team environment</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:46.74%;top:69.20%;width:15.53%;height:1.54%"><span lang="en-US" style="font-size:56%">- Communication</span><span lang="en-US" style="font-size:56%;mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 26_x0000_s12" src="slide0001_image013.png" style="position:absolute;left:5.23%;top:63.20%;width:39.24%;height:13.05%"/><![endif]><div v:shape="TextBox 26_x0000_s12"><div class=O><span style="position:absolute;left:6.57%;top:63.66%;width:12.70%;height:2.77%"><span lang="en-US"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:78%">Interests</span><span lang="en-US" style="font-size:78%">:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.57%;top:66.41%;width:43.54%;height:1.54%"><span lang="en-US" style="font-size:56%">- Football: Passionate about playing football and </span></span><span style="position:absolute;left:6.57%;top:67.95%;width:40.33%;height:1.54%"><span lang="en-US" style="font-size:56%">actively participate in local football matches.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.57%;top:69.49%;width:38.96%;height:1.54%"><span lang="en-US" style="font-size:56%">- Handball: Enjoys playing handball and has </span></span><span style="position:absolute;left:6.57%;top:71.03%;width:30.67%;height:1.54%"><span lang="en-US" style="font-size:56%">participated in local tournaments.</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.57%;top:72.57%;width:36.47%;height:1.54%"><span lang="en-US" style="font-size:56%">- Cooking: Passionate about cooking and </span></span><span style="position:absolute;left:6.57%;top:74.11%;width:33.67%;height:1.54%"><span lang="en-US" style="font-size:56%">experimenting with different recipes</span><span lang="en-US" style="font-size:56%">.</span><span lang="en-US" style="mso-special-format:lastCR">&#13;</span></span></div></div><![if !vml]>
+<img border=0 v:shapes="TextBox 27_x0000_s13" src="slide0001_image014.png" style="position:absolute;left:5.65%;top:77.25%;width:35.69%;height:9.63%"/><![endif]><div v:shape="TextBox 27_x0000_s13"><div class=O><span style="position:absolute;left:6.99%;top:77.71%;width:14.96%;height:2.77%"><span lang="en-US"><span style="mso-spacerun:yes">&nbsp;</span></span><span lang="en-US" style="font-size:78%">Languages</span><span lang="en-US" style="font-size:78%">:</span><span lang="en-US" style="font-size:78%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.99%;top:80.47%;width:14.36%;height:1.54%"><span lang="en-US" style="font-size:56%">- </span><span lang="en-US" style="font-size:56%">English: Fluent</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.99%;top:82.01%;width:24.78%;height:1.54%"><span lang="en-US" style="font-size:56%">- French: Partial proficiency</span><span lang="en-US" style="font-size:56%">&#13;</span></span></div><div class=O><span style="position:absolute;left:6.99%;top:83.56%;width:0.00%;height:2.77%"><span lang="en-US" style="mso-special-format:lastCR;display:none">&#13;</span></span></div></div></p:slide>
+  </div>
+ </body>
+</html>
